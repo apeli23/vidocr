@@ -9,9 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "cloudinary": "^1.32.0",
+    "compression": "^1.7.4",
+    "html2canvas": "^1.4.1",
     "next": "12.3.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "tesseract.js": "^3.0.3",
+    "use-react-screenshot": "^3.0.0",
+    "video-snapshot": "^1.0.11"
   },
   "devDependencies": {
     "eslint": "8.24.0",

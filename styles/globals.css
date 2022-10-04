@@ -27,8 +27,7 @@ body{
   display:flex;
 }
 .Video{
-  width: 40vw;
-  height: 30vw;
+ 
   margin: 1rem;
   background: #2c3e50;
 }

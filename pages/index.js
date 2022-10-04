@@ -53,10 +53,12 @@ function OCR() {
 
   const handleRecognition = async () => {
     setTextPreview(true)
-    snapshoter = new VideoSnapshot(video);
-    const currentTime = videoRef.current.currentTime;
-    const videoPreview = await snapshoter.takeSnapshot(currentTime);
-    handleOCR(videoPreview);
+    const vid = videoRef.current;
+    console.log(vid.width)
+    html2canvas(vid).then((canvas) => {
+      handleOCR(canvas.toDataURL())
+    })
+
   };
 
   const handleOCR = async (preview) => {
@@ -135,9 +137,11 @@ function OCR() {
           <input ref={inputRef} type="file" hidden onChange={handleChange} />
           {video ? (
             <Video
+              width="200"
               ref={videoRef}
               className="Video"
               controls
+              muted
               src={URL.createObjectURL(video)}
             ></Video>
           ) : (
@@ -159,7 +163,7 @@ function OCR() {
             <Status>
               {link ? (
                 <a href={link}>
-                  <Text>{link}</Text>
+                  <Text>Get Link</Text>
                 </a>
               ) : (
                 'text link shows here'

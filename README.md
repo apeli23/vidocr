@@ -151,11 +151,13 @@ The `chooseVideo` function is called when the user selects a video file. It extr
 
 ## 4. Implement the captureText function.
 
+```
 const captureText = async () => {
   const video = videoRef.current;
   const canvas = await html2canvas(video);
   handleOCR(canvas.toDataURL());
 };
+```
 The `captureText` function is called when the user clicks the "Capture Text" button. It uses the html2canvas library to capture a frame from the video and convert it to a data URL. It then calls the `handleOCR` function with the data URL as an argument.
 
 ## 5. Implement the handleOCR function.

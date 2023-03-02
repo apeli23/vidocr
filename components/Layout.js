@@ -20,12 +20,14 @@ export default function Layout({ title, children }) {
                             <a className="text-lg font-bold">videoOCR</a>
                         </Link>
                         <div>
-                            <Link href="/cart" legacyBehavior>
+                            <Link href="https://www.apeli.tech/blog/posts/vidocr" legacyBehavior>
                                 <a className="p-2">Documenation</a>
                             </Link>
-                            <button className="bg-emerald-500 hover:bg-emerald-700 text-white font-bold py-1 px-4 rounded">
-                                Blog
-                            </button>
+                            <Link href="http://apeli.tech/" legacyBehavior>
+                                <button className="bg-emerald-500 hover:bg-emerald-700 text-white font-bold py-1 px-4 rounded">
+                                   Myg Blog
+                                </button>
+                            </Link>
                         </div>
                     </nav>
                 </header>

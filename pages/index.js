@@ -66,6 +66,10 @@ function OCR() {
           </div>
         </div>
       ) : (
+        <>
+          <h2 className='text-center text-3xl font-black'>Extract Text(s) from Video</h2>
+          <p className='text-center text-3sm'>#nextjs #tailwind #tesseractjs</p>
+        
         <div className="grid h-screen place-items-center">
           <button
             className="w-3/4 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
@@ -75,6 +79,7 @@ function OCR() {
           </button>
           <input ref={inputRef} type="file" hidden onChange={chooseVideo} />
         </div>
+        </>
       )}
     </Layout>
   );

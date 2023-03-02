@@ -25,7 +25,7 @@ export default function Layout({ title, children }) {
                             </Link>
                             <Link href="http://apeli.tech/" legacyBehavior>
                                 <button className="bg-emerald-500 hover:bg-emerald-700 text-white font-bold py-1 px-4 rounded">
-                                   Myg Blog
+                                   My Blog
                                 </button>
                             </Link>
                         </div>
